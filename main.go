@@ -1,18 +1,16 @@
 package main
 
-
 import (
-	"os"
 	"log"
+	"os"
 )
 
-
-func ToError (errMsg string){
+func ToError(errMsg string) {
 	log.Println(errMsg)
 	os.Exit(1)
 }
 
-func main (){
+func main() {
 	args := os.Args
 	if len(args) < 3 {
 		ToError("Error, 001")
